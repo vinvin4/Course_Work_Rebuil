@@ -2,7 +2,7 @@
 /**
 Update vector's size
 */
-void Bibl::updateSize()
+void Bibl::update_size()
 {
 	size = bibl.size();
 }
@@ -13,7 +13,7 @@ void Bibl::add()
 {
 	Book* book = new Book(ID++);
 	bibl.push_back(*book);
-	updateSize();
+	update_size();
 }
 /**
 Show list of books
@@ -35,7 +35,7 @@ Return: Position in list
 int Bibl::check_ID(unsigned int id)
 {
 	int j = 0;
-	while (bibl[j].getID() != id && j < this->size)
+	while (bibl[j].get_ID() != id && j < this->size)
 	{
 		j++;
 	}
@@ -89,7 +89,7 @@ void Bibl::delete_per()
 	{
 		failure();
 	}
-	this->updateSize();
+	this->update_size();
 }
 /**
 Connecting book with reader
@@ -105,7 +105,7 @@ void Bibl::new_reader()
 	{
 		std::cout << "¬веди ID читател€: ";
 		std::cin >> id;
-		bibl[j].setCon(id);
+		bibl[j].set_con(id);
 	}
 	else
 	{
@@ -124,7 +124,7 @@ void Bibl::failure()
 
 Bibl::Bibl()
 {
-	this->updateSize();
+	this->update_size();
 	ID = 1;
 }
 

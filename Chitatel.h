@@ -12,7 +12,7 @@ private:
 	unsigned int ID;
 public:
 	void show_self();
-	unsigned int getID();
+	unsigned int get_ID();
 	Chitatel();
 	Chitatel(unsigned int i);
 	~Chitatel();

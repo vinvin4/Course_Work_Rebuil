@@ -8,18 +8,18 @@ void Book::show_self()
 	printf("%30s  ", this->caption);
 	std::cout << this->authoor << std::endl;
 }
-
-unsigned int Book::getCon()
+//*Getter
+unsigned int Book::get_con()
 {
 	return con;
 }
-
-void Book::setCon(unsigned int ID)
+//*Setter
+void Book::set_con(unsigned int ID)
 {
 	con = ID;
 }
-
-unsigned int Book::getID()
+//*Getter
+unsigned int Book::get_ID()
 {
 	return ID;
 }

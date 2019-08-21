@@ -1,8 +1,6 @@
 #include "People.h"
-/**
-Update vector's size
-*/
-void People::updateSize()
+
+void People::update_size()
 {
 	size = vector_chit.size();
 }
@@ -10,7 +8,7 @@ void People::updateSize()
 int People::check_ID(unsigned int id)
 {
 	int j = 0;
-	while (vector_chit[j].getID() != id && j < this->size)
+	while (vector_chit[j].get_ID() != id && j < this->size)
 	{
 		j++;
 	}
@@ -48,14 +46,14 @@ void People::delete_per()
 	{
 		failure();
 	}
-	this->updateSize();
+	this->update_size();
 }
 
 void People::add()
 {
 	Chitatel* chit = new Chitatel(ID++);
 	vector_chit.push_back(*chit);
-	this->updateSize();
+	this->update_size();
 	write_file();
 }
 

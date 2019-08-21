@@ -11,10 +11,13 @@ private:
 	unsigned int con;
 	unsigned int ID;
 public:
+	/**
+	Show information about this book
+	*/
 	void show_self();
-	unsigned int getCon();
-	void setCon(unsigned int ID);
-	unsigned int getID();
+	unsigned int get_con();
+	void set_con(unsigned int ID);
+	unsigned int get_ID();
 	Book();
 	Book(unsigned int id);
 	~Book();

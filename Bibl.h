@@ -8,7 +8,7 @@ class Bibl
 private:
 	std::vector<Book> bibl;
 	int size;
-	void updateSize();
+	void update_size();
 	unsigned int ID; //Counter of new ID
 	void failure();
 	int check_ID(unsigned int id);
